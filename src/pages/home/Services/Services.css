@@ -1,0 +1,37 @@
+.service-img{
+width: 100%;
+}
+.service-img-three{
+    height: 40vh;
+}
+.service-img-one{
+    height: 40vh;
+}
+.service-img-two{
+    height: 50vh;
+}
+
+.service-title{
+    padding: 15px 0px;
+}
+.service-icon{
+    background: red;
+    color:white;
+    padding: 6px;
+    border-radius: 100%;
+    font-size: 15px;
+    padding-top: -2px;
+    margin-bottom: -2px;
+}
+.service-icon-three{
+    background: red;
+    color:white;
+    padding: 7px 5px;
+    border-radius: 100%;
+    font-size: 15px;
+    padding-top: -2px;
+    margin-bottom: -4px;
+}
+/* .right-arrow{
+    width: 30px;
+} */

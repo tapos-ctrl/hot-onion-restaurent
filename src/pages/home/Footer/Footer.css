@@ -1,0 +1,21 @@
+.footer{
+    background: #000;
+}
+.footer-logo{
+    width: 10vw;
+}
+.footer-list>li>a{
+    text-decoration: none;
+    color:silver;
+   
+}
+.footer-list-two>li>a{
+    text-decoration: none;
+    color:silver
+}
+.footer-list>li{
+    margin: 15px 0px;
+}
+.footer-list-two>li{
+    margin: 15px 0px;
+}

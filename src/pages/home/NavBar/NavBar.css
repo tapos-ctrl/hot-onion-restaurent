@@ -1,0 +1,41 @@
+.navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.logo img{
+    width: 150px;
+    padding: 20px 0px;
+}
+.navBarBg{
+    background: white;
+}
+.manu{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;;
+}
+.manu>li{
+    list-style: none;
+    margin: 0vw 1vw;
+    
+}
+.manu>li>a{
+    text-decoration: none;
+}
+.signUpBtn{
+    background: #f91944;
+    padding:4px 20px;
+    border-radius: 50px;
+    color:white
+
+}
+.signUpBtn>a{
+    color:white
+}
+.shopIcon{
+    color: black;
+    margin-top: 4px;
+    font-size: 18px;
+}
