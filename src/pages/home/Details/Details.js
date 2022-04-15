@@ -14,16 +14,13 @@ const Details = () => {
             .then(data => setProduct(data))
     }, [])
 
-
     const result = (product && product.find(pd => pd.id === parseInt(ProductId)));
-    // const { name, url } = result;
-    console.log(result)
 
 
 
     return (
         <div>
-            <h1>Details now....{result && result.name}</h1>
+            <h1>Details now{ProductId}....{result && result.name}</h1>
             <img src={result && result.url} alt="" />
         </div>
     );
