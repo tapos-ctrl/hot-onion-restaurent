@@ -11,7 +11,7 @@ const Lunchs = () => {
     const [lunchs, setLunchs] = useState([])
 
     useEffect(() => {
-        fetch('breakFest.json')
+        fetch('https://raw.githubusercontent.com/tapos-ctrl/hot-onion-restaurent/main/src/fakeData/lunch.json')
             .then(res => res.json())
             .then(data => setLunchs(data))
     }, [])

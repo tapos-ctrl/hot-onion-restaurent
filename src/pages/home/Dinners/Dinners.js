@@ -10,7 +10,7 @@ import Footer from './../Footer/Footer';
 const Dinners = () => {
     const [dinner, setDinner] = useState([])
     useEffect(() => {
-        fetch('dinner.json')
+        fetch('https://raw.githubusercontent.com/tapos-ctrl/hot-onion-restaurent/main/src/fakeData/dinner.json')
             .then(res => res.json())
             .then(data => setDinner(data))
     }, [])

@@ -1,25 +1,30 @@
-import  React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 
 
 const Details = () => {
-    // const [item, setItem] = useState([])
+    let { ProductId } = useParams()
+
+    const [product, setProduct] = useState([])
+
     useEffect(() => {
-        fetch('breakFest.json')
+        fetch('https://raw.githubusercontent.com/tapos-ctrl/hot-onion-restaurent/main/src/fakeData/breakFest.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setProduct(data))
     }, [])
 
 
-   let {id} = useParams()
+    const result = (product && product.find(pd => pd.id === parseInt(ProductId)));
+    // const { name, url } = result;
+    console.log(result)
 
-//    const result = item.find( (name ) => name === id );
-//    console.lot(result)
+
 
     return (
         <div>
-            <h1>Details now....{id}</h1>
+            <h1>Details now....{result && result.name}</h1>
+            <img src={result && result.url} alt="" />
         </div>
     );
 };

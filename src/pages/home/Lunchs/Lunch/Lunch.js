@@ -6,8 +6,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles({
+    
+
     root: {
         maxWidth: 345,
 
@@ -24,13 +27,17 @@ const useStyles = makeStyles({
 
 
 const Lunch = (props) => {
-    const { name, url, dis, price } = props.lunch;
+    const navigat = useNavigate()
+
+    const { name, url, dis, price, id } = props.lunch;
     console.log(props)
     const classes = useStyles();
+
+
     return (
         <Grid item lg={4} sm={6}>
             <Card elevation={0} className={classes.root}>
-                <CardActionArea>
+                <CardActionArea onClick={() => navigat(`/service/${id}`)}>
                     <CardMedia
                         className={classes.media}
                         image={url}

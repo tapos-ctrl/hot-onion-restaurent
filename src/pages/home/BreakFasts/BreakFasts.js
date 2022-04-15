@@ -10,7 +10,7 @@ const BreakFasts = () => {
     const [breakFast, setBreakFast] = useState([])
    
     useEffect(() => {
-        fetch('breakFest.json')
+        fetch('https://raw.githubusercontent.com/tapos-ctrl/hot-onion-restaurent/main/src/fakeData/breakFest.json')
             .then(res => res.json())
             .then(data => setBreakFast(data))
     }, [])
